@@ -654,6 +654,6 @@ public class GlifLayout extends PartnerCustomizationLayout {
 
   protected boolean isGlifExpressiveEnabled() {
     return PartnerConfigHelper.isGlifExpressiveEnabled(getContext())
-        && Build.VERSION.SDK_INT >= VERSION_CODES.VANILLA_ICE_CREAM;
+        && Build.VERSION.SDK_INT >= 35;
   }
 }

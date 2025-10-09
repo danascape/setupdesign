@@ -84,7 +84,6 @@ public class ItemAdapter extends BaseAdapter implements ItemHierarchy.Observer {
     }
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getFirstBackground(Context context) {
     TypedArray a =
         context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackgroundFirst});
@@ -93,7 +92,6 @@ public class ItemAdapter extends BaseAdapter implements ItemHierarchy.Observer {
     return firstBackground;
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getLastBackground(Context context) {
     TypedArray a =
         context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackgroundLast});
@@ -102,7 +100,6 @@ public class ItemAdapter extends BaseAdapter implements ItemHierarchy.Observer {
     return lastBackground;
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getMiddleBackground(Context context) {
     TypedArray a = context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackground});
     Drawable middleBackground = a.getDrawable(0);
@@ -110,7 +107,6 @@ public class ItemAdapter extends BaseAdapter implements ItemHierarchy.Observer {
     return middleBackground;
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getSingleBackground(Context context) {
     TypedArray a =
         context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackgroundSingle});
@@ -189,7 +185,7 @@ public class ItemAdapter extends BaseAdapter implements ItemHierarchy.Observer {
 
     // TODO  when getContext is not activity context then fallback to out suw behavior
     if (PartnerConfigHelper.isGlifExpressiveEnabled(parent.getContext())
-        && Build.VERSION.SDK_INT >= VERSION_CODES.VANILLA_ICE_CREAM) {
+        && Build.VERSION.SDK_INT >= 35) {
       IItem item = getItem(position);
       LinearLayout linearLayout = null;
       // The ListView can not handle the margin for the child view. So we need to use the

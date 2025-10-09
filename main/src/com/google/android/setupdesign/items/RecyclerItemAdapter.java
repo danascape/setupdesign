@@ -174,7 +174,6 @@ public class RecyclerItemAdapter extends RecyclerView.Adapter<ItemViewHolder>
     return viewHolder;
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getFirstBackground(Context context) {
     TypedArray a =
         context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackgroundFirst});
@@ -183,7 +182,6 @@ public class RecyclerItemAdapter extends RecyclerView.Adapter<ItemViewHolder>
     return firstBackground;
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getLastBackground(Context context) {
     TypedArray a =
         context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackgroundLast});
@@ -192,7 +190,6 @@ public class RecyclerItemAdapter extends RecyclerView.Adapter<ItemViewHolder>
     return lastBackground;
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getMiddleBackground(Context context) {
     TypedArray a = context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackground});
     Drawable middleBackground = a.getDrawable(0);
@@ -200,7 +197,6 @@ public class RecyclerItemAdapter extends RecyclerView.Adapter<ItemViewHolder>
     return middleBackground;
   }
 
-  @TargetApi(VERSION_CODES.VANILLA_ICE_CREAM)
   private Drawable getSingleBackground(Context context) {
     TypedArray a =
         context.getTheme().obtainStyledAttributes(new int[] {R.attr.sudItemBackgroundSingle});
@@ -276,7 +272,7 @@ public class RecyclerItemAdapter extends RecyclerView.Adapter<ItemViewHolder>
     holder.setItem(item);
     // TODO  when getContext is not activity context then fallback to out suw behavior
     if (PartnerConfigHelper.isGlifExpressiveEnabled(holder.itemView.getContext())
-        && Build.VERSION.SDK_INT >= VERSION_CODES.VANILLA_ICE_CREAM) {
+        && Build.VERSION.SDK_INT >= 35) {
       updateBackground(holder.itemView, position);
     }
     item.onBindView(holder.itemView);
