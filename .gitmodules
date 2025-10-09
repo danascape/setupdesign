@@ -1,0 +1,4 @@
+[submodule "setupdesign"]
+	url = https://github.com/danascape/setupdesign
+[submodule "setupcompat"]
+	url = https://github.com/danascape/setupcompat
