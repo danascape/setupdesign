@@ -162,7 +162,7 @@ public class CardView extends LinearLayout implements View.OnClickListener {
         v.setContentDescription(
             getContext()
                 .getString(
-                    com.google.android.setupdesign.strings.R.string
+                    com.google.android.setupdesign.R.string
                         .sud_card_view_check_mark_icon_label));
       }
       if (titleView != null) {

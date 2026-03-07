@@ -245,9 +245,9 @@ public class ExpandableSwitchItem extends SwitchItem
     TextView showMoreLink = view.findViewById(R.id.sud_items_more_info);
     if (showMoreLink != null) {
       if (isExpanded()) {
-        showMoreLink.setText(com.google.android.setupdesign.strings.R.string.sud_less_info);
+        showMoreLink.setText(com.google.android.setupdesign.R.string.sud_less_info);
       } else {
-        showMoreLink.setText(com.google.android.setupdesign.strings.R.string.sud_more_info);
+        showMoreLink.setText(com.google.android.setupdesign.R.string.sud_more_info);
       }
     }
   }

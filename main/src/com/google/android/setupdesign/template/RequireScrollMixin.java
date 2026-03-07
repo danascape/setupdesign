@@ -525,7 +525,7 @@ public class RequireScrollMixin implements Mixin {
               .getDimensionPixelSize(R.dimen.sud_glif_expressive_down_button_icon_size));
       materialButton.setContentDescription(
           context.getText(
-              com.google.android.setupdesign.strings.R.string
+              com.google.android.setupdesign.R.string
                   .sud_expressive_accessibility_more_button_label));
       footerBarMixin.setDownButtonForExpressiveStyle();
     } else {
